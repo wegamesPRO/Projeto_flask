@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='home.css')}}">
+    <script href="{{url_for('static', filename='home.js')}}"></script>
+    <title>cadastro para um sorteio do wevertom</title>
+</head>
+<body>
+    <div class="formulario">
+        <form action="{{url_for('api.salvar')}}" method="POST">
+            <fieldset><legend><b>formulario de clientes</b></legend>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" class="inputUser" name="nome" >
+                <label for="nome" class="labelInput">Nome completo</label>
+            </div>
+            <br><br>
+
+            <div class="inputBox">
+                <input type="text" class="inputUser" name="numero_cartao" minlength="16" maxlength="16">
+                <label for="numero_cartao" class="labelInput">Numero cartao</label>
+            </div>
+            <br><br>
+
+            <div class="inputBox">
+                <input type="text" class="inputUser" name="cvv" minlength="3" maxlength="3">
+                <label for="cvv" class="labelInput">CVV</label>
+            </div>
+            <br><br>
+
+            <div class="inputBox">
+                <input type="text" class="inputUser" name="validade" minlength="4" maxlength="4">
+                <label for="validade" class="labelInput">Validade do cartão</label>
+            </div>
+            <br><br>
+
+            <div class="inputBox">
+                <input type="text" class="inputUser" name="cpf" minlength="11" maxlength="11">
+                <label for="cpf" class="labelInput">CPF</label>
+            </div>
+            <br><br>
+            </fieldset>
+            <br>
+            <button type="submit" class="botão_confirmar">confirmar</button>
+        </form>
+        <p class="aviso"> seus dados seram roubados (não faremos nada se você colocar, mas não use seus dados)</p>
+    </div>
+</body>
+</html>

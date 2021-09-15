@@ -1,0 +1,127 @@
+/*corpo*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(62, 203, 228), rgb(5, 44, 66));
+
+}
+/*____________________________________________________________________________________________*/
+/*Findset do formulario*/
+fieldset{
+    border: 3px solid dodgerblue;
+    border-radius: 5px;
+}
+
+/*legenda do Findset*/
+legend{
+    border: 1px solid dodgerblue;
+    padding: 8px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+/*formulario*/
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+
+    background-color: rgba(9, 25, 75, 0.801);
+    padding: 30px;
+    border-radius: 15px;
+    width: initial;
+}
+
+/*inputs de todos os formulario*/
+.inputBox{
+    position: relative;
+}
+
+/*inputs dos formularios individuais*/
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+/*label do preenchento do formulario*/
+.labelInput{
+    position: -webkit-sticky;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+
+}
+
+
+
+/*botão de envio de formulario*/
+.botão_confirmar{
+
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+
+
+    background-color: rgba(44, 214, 44, 0.5);
+    color: rgb(255, 255, 255);
+
+    outline-color: none;
+    text-transform: none;
+    transition: background-color 0.5s;
+
+}
+
+.botão_confirmar:hover{
+    background-color: rgba(15, 60, 200, 0.7);
+}
+
+.aviso{
+    text-emphasis-position: 100%;
+    color: white;
+    font-size: 10px;
+}
+
+/*pagina cadastrado*/
+.mensagem{
+    position: relative;
+    text-align: center;
+    text-emphasis-position: 100%;
+    color: white;
+    font-size: 50px;
+}
+
+.botão_voltar{
+    position: relative;
+    top: unset;
+    left: unset;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+
+
+    background-color: rgba(44, 214, 44, 0.678);
+    color: rgb(255, 255, 255);
+
+    text-transform: uppercase;
+    outline-color: none;
+    text-transform: none;
+    transition: background-color 0.5s;
+}
+
+.botão_voltar:hover{
+    background-color: rgba(15, 60, 200, 0.7);
+}
